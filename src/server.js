@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 var enableHotReload = require("./hot-reload");
 
 var loginController = require("./controllers/loginController");
+var cadastroController = require("./controllers/cadastroController")
 
 const app = express();
 
@@ -25,6 +26,7 @@ enableHotReload(app);
 
 // Rotas
 app.get("/", loginController.exibirPaginaLogin);
+app.get("/criar-conta", cadastroController.exibirPaginaCadastro);
 
 // Inicie o servidor
 const port = 3000;
