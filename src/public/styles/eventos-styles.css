@@ -62,31 +62,6 @@ small {
   margin-top: -50px;
 }
 
-.formulario h2 {
-  color: #32264D;
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.formulario label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #4E4958;
-}
-
-.formulario input {
-  width: 100%;
-  padding: 16px 8px;
-  border: 1px solid #E6E6F0;
-  border-radius: 8px;
-  margin-bottom: 24px;
-}
-
-.formulario input:focus {
-  outline: 2px solid #E6E6F0;
-}
-
 .formulario button {
   width: 100%;
   padding: 15px;
@@ -97,7 +72,7 @@ small {
   border-radius: 8px;
   cursor: pointer;
 
-  margin-top: 24px;
+  margin-bottom: 24px;
   transition: background-color 0.3s ease;
 }
 
@@ -105,8 +80,17 @@ small {
   background-color: #218838;
 }
 
-.formulario a {
-  display: block;
-  font-size: 14px;
-  margin-top: 24px;
+.formulario h2 {
+  color: #32264D;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.eventos {
+  list-style: none;
+}
+
+.eventos li {
+  background-color: #FFF;
+  padding: 10px 0;
 }
