@@ -7,7 +7,6 @@ function exibirPaginaCadastro(request, response) {
 
 // Responsável por adicionar um novo usuário
 function adicionarUsuario(request, response) {
-  console.log(request.body);
 
   // Extrair os dados do corpo da requisição
   const { nome, email, senha } = request.body;
@@ -16,8 +15,8 @@ function adicionarUsuario(request, response) {
   // Adicionar o usuário
   usuarioModel.adicionarUsuario(nome, email, senha)
 
-  // Redirecionar para a página de login
-  response.redirect('/');
+  // Redirecionar para a página de eventos
+  response.redirect('/eventos');
 }
 
 module.exports = {

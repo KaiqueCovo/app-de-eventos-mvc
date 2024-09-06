@@ -43,6 +43,9 @@ app.get("/eventos", eventoController.exibirPaginaEventos);
 // Rota para a página de criar evento
 app.get("/criar-evento", eventoController.exibirPaginaCriarEvento);
 
+// Rota para criar um novo evento
+app.post("/criar-evento", eventoController.adicionarEvento);
+
 // Inicie o servidor
 const port = 3000;
 app.listen(port, () => {
