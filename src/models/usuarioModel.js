@@ -6,16 +6,6 @@ const pool = require("../config/banco-de-dados");
 const usuarios = [];
 
 function adicionarUsuario(nome, email, senha) {
-  // usuarios.push({
-  //   id: Date.now(),
-  //   nome: nome,
-  //   email: email,
-  //   senha: md5(senha),
-  //   criadoEm: new Date()
-  // })
-
-  // console.log(usuarios)
-
   // Criptografando a senha do usuário
   const senhaCriptografada = md5(senha);
 
