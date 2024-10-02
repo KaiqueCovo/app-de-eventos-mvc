@@ -13,7 +13,7 @@ function adicionarUsuario(request, response) {
 
 
   // Adicionar o usuário
-  usuarioModel.adicionarUsuario(nome, email, senha)
+  usuarioModel.adicionarUsuario(nome, email, senha, 'usuario')
 
   // Redirecionar para a página de eventos
   response.redirect('/eventos');
